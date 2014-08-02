@@ -1,1 +1,2 @@
 ps: node ./ps.js $@
+hosts: cat ./servers.json

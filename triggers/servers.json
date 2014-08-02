@@ -1,0 +1,24 @@
+[{
+	"hostname":"node1",
+	"ip":"192.168.8.120",
+	"dockerport":"2375",
+	"tags":[
+		"db",
+		"master"
+	]
+},{
+	"hostname":"node2",
+	"ip":"192.168.8.121",
+	"dockerport":"2375",
+	"tags":[
+		"db",
+		"master"
+	]
+},{
+	"hostname":"node3",
+	"ip":"192.168.8.122",
+	"dockerport":"2375",
+	"tags":[
+		"master"
+	]
+}]
