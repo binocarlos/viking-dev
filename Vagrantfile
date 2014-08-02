@@ -19,6 +19,7 @@ SCRIPT
     node.vm.hostname = "node1"
     node.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
     end
     if PROJECTS_HOME
       node.vm.synced_folder PROJECTS_HOME, "/srv/projects"
@@ -33,6 +34,7 @@ SCRIPT
     node.vm.hostname = "node2"
     node.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
     end
     if PROJECTS_HOME
       node.vm.synced_folder PROJECTS_HOME, "/srv/projects"
@@ -47,6 +49,7 @@ SCRIPT
     node.vm.hostname = "node3"
     node.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
     end
     if PROJECTS_HOME
       node.vm.synced_folder PROJECTS_HOME, "/srv/projects"
